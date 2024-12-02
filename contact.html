@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Island of Taniti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <span id="banner">
+            <h1>The Island of Taniti</h1>
+        </span>
+        <nav id="navbar">
+            </ul>
+            <a href="index.html">Home</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="info.html">Travel Info</a>
+            <a href="contact.html">Contact</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+    </header>
+
+    <div class="main">
+
+        <div id="main_content">
+            <section id="contactForm">
+                
+                    <form action="#" onsubmit="formValidation(event)">
+                        <div>
+                            <label for="firstName">First Name: *</label><br>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div>
+                            <label for="lastName">Last Name: *</label><br>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email Address: *</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div>
+                            <label for="confirmEmail">Confirm Email Address: *</label><br>
+                            <input type="email" id="confirmEmail" name="confirmEmail" required>
+                        </div>
+                        
+                        <div>
+                            <label for="question">Your Question: *</label><br>
+                            <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+                        </div>
+                        
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                
+            </section>
+        </div>
+        
+        <br>
+        * required fields
+        <br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        Follower us on social media:
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <br>
+        <a href="index.html">Home</a> &bull;
+        <a href="attractions.html">Attractions</a> &bull;
+        <a href="info.html">Travel Info</a> &bull;
+        <a href="contact.html">Contact</a> &bull;
+        <a href="sources.html">Sources</a>
+    </footer>
+
+    <script>
+        function formValidation(event) {
+            event.preventDefault();
+            if (document.getElementById("email").value !== document.getElementById("confirmEmail").value) {
+                alert("Email fields do not match!");
+            } else {
+                alert("Thank you for your feedback!");
+
+                document.getElementById("firstName").value = "";
+                document.getElementById("lastName").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("confirmEmail").value = "";
+                document.getElementById("question").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

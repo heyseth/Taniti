@@ -1,0 +1,171 @@
+html {
+    overflow-x: hidden;
+    /* one font-family declaration used at least once in the HTML files */
+    font-family: 'Calibri';
+    font-size: 16px;
+    background-color: #2e4057;
+    color: #131c26;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* a functioning element selector that is used at least once on the website */
+h1 {
+    /* one font-family declaration used at least once in the HTML files */
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    /* relative positioning on one page that changes the position of an element */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* a better way to center this text would be to use justify-content: center in the parent element */
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    /* a :hover pseudo-class to create a rollover effect for the navigation links */
+    opacity: 0.7;
+}
+
+/*  a functioning id selector used at least once on the website */
+#state {
+    /* absolute positioning on one page that changes the position of an element*/
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
+
+#state > img {
+    width: 100px;
+}
+
+#state > sup > a {
+    color: #1d2758;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff7ee;
+}
+
+/*  a functioning id selector used at least once on the website */
+#main_content {
+    width: 60%;
+}
+
+/* a functioning element selector that is used at least once on the website */
+section {
+    width: 100%;
+}
+
+/*  a functioning id selector used at least once on the website */
+#banner {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff7ee;
+}
+
+/*  a functioning id selector used at least once on the website */
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item>img {
+    width: 250px;
+    height: auto;
+}
+
+/* a functioning class selector that is used twice on the same HTML page */
+.item {
+    max-width: 250px;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    background-color: #31bfed;
+}
+
+header,
+footer {
+    width: 100%;
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background-color: #2e4057;
+    color: white;
+    width: 100%;
+}
+
+footer>a {
+    text-decoration: none;
+}
+
+/* a functioning class selector that is used twice on the same HTML page */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 25%;
+}
+
+.fa:hover {
+    /* a :hover pseudo-class to create a rollover effect for the navigation links */
+    opacity: 0.7;
+}
+
+td>a {
+    color: black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+sup > a {
+    color: black;
+    text-decoration: none;
+}
+
+#contactForm {
+    display: flex;
+    justify-content: center;
+}
+
+#question {
+    width: 100%;
+}
